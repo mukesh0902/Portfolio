@@ -8,15 +8,15 @@ const projects = [
     description:
       'Designed and implemented a Full-Stack Employee Management System using the MERN stack, enabling secure role-based authentication with JWT and managing over 10 employee tasks per user with dynamic statuses.',
     technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
-    liveDemo: 'https://example.com',
-    github: 'https://github.com/mukesh0902/employee-management',
+    liveDemo: 'https://github.com/mukesh0902/FullstackEMS.git',
+    github: 'https://github.com/mukesh0902/FullstackEMS.git',
   },
   {
     title: 'DailyPulseX – AI-Powered News Aggregator',
     description:
       'Built a scalable web app integrating Newsdata.io API for real-time news and Google Gemini Pro LLM for summarization, reducing reading time by ~40%.',
     technologies: ['Flask', 'HTML/CSS', 'JavaScript'],
-    liveDemo: 'https://example.com',
+    liveDemo: 'https://github.com/mukesh0902/dailypulsex',
     github: 'https://github.com/mukesh0902/dailypulsex',
   },
   {
@@ -24,7 +24,7 @@ const projects = [
     description:
       'Developed a responsive e-commerce platform with product browsing, filtering, and cart management using React.js and Redux Toolkit.',
     technologies: ['React.js', 'Redux Toolkit', 'Bootstrap'],
-    liveDemo: 'https://example.com',
+    liveDemo: 'https://github.com/mukesh0902/paradise-nursery',
     github: 'https://github.com/mukesh0902/paradise-nursery',
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     description:
       'Created a social media app with real-time updates using React hooks and Context API for state management.',
     technologies: ['React', 'JavaScript', 'HTML', 'CSS', 'Bootstrap'],
-    liveDemo: 'https://example.com',
+    liveDemo: 'https://syf.vercel.app/',
     github: 'https://github.com/mukesh0902/social-media-app',
   },
 ];

@@ -39,16 +39,6 @@
 
 ---
 
-## 📸 Screenshots
-
-<p align="center">
-  <img src="https://i.imgur.com/FK7LFeD.png" alt="Portfolio Homepage" width="80%"/>
-  <br/>
-  <i>Modern UI with dark/light theme toggle and responsive design</i>
-</p>
-
----
-
 ## 📂 Folder Structure
 
 Portfolio/ ├── public/ │ ├── resume.pdf │ └── index.html ├── src/ │ ├── components/ │ ├── pages/ │ ├── App.js │ ├── index.js │ └── theme.js ├── .gitignore ├── package.json ├── README.md
@@ -93,16 +83,7 @@ Designed & Developed by Mukesh Kumar 🚀
 yaml
 Copy
 Edit
-
----
-
-### ✅ To Use This:
-- Save this content as your `README.md` file in the root of your project.
-- Add your own screenshot in the `📸 Screenshots` section.
-- Feel free to add a link to your deployed site!
-
-Would you like me to generate a version with more personal branding, animations, or a GIF preview?
-
+ 
 
 
 

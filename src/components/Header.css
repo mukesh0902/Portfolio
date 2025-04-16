@@ -2,14 +2,13 @@
    Base Header Styles
 ======================= */
 
-
-/* Dark mode header */
 .navbar-dark {
   background-color: rgb(0, 0, 0) !important;
 }
+
 .drawer-light {
   text-transform: uppercase;
-  background-color:  #e0e0e0;
+  background-color: #e0e0e0;
   color: #000000;
 }
 
@@ -17,7 +16,6 @@
   text-transform: uppercase;
   background-color: #000000 !important;
   color: #0eabab !important;
-
 }
 
 .drawer-light .MuiListItemButton-root:hover,
@@ -26,11 +24,15 @@
   transition: background-color 0.3s ease;
 }
 
+.drawer-light .MuiIconButton-root,
+.drawer-dark .MuiIconButton-root {
+  color: inherit;
+}
+
 .navbar-dark .nav-link {
   color: rgb(15, 179, 185) !important;
 }
 
-/* Light mode header */
 .navbar-light {
   background-color: #e0e0e0 !important;
   color: #000 !important;
@@ -40,20 +42,19 @@
   color: #000 !important;
 }
 
-/* Toggle button styling */
-.theme-toggle-btn {
-  background: none;
-  border: 1px solid #ccc;
-  padding: 5px 10px;
-  margin-left: 15px;
-  color: #fff;
-  cursor: pointer;
+/* Style for theme toggle button in drawer */
+.drawer-light .MuiIconButton-root[aria-label="toggle theme"] {
+  color: #000;
 }
 
-.theme-toggle-btn:hover {
-  background-color: #444;
+.drawer-dark .MuiIconButton-root[aria-label="toggle theme"] {
+  color: #0eabab;
 }
 
+.drawer-light .MuiTypography-root,
+.drawer-dark .MuiTypography-root {
+  color: inherit;
+}
 
 /* =======================
    Media Queries for Devices
@@ -63,18 +64,43 @@
 @media (max-width: 600px) {
   .navbar {
     padding: 10px 15px !important;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .theme-toggle-btn {
-    display: none !important; /* Hide in top nav, shown in drawer */
+    flex-direction: row;
+    align-items: center;
   }
 
   .nav-link {
     font-size: 14px;
     padding: 6px 0;
     display: block;
+  }
+
+  .drawer-light .MuiIconButton-root[aria-label="toggle theme"],
+  .drawer-dark .MuiIconButton-root[aria-label="toggle theme"] {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .drawer-light .MuiTypography-root,
+  .drawer-dark .MuiTypography-root {
+    font-size: 14px;
+  }
+}
+
+/* Extra small phones (max-width: 425px) */
+@media (max-width: 425px) {
+  .navbar {
+    padding: 8px 12px !important;
+  }
+
+  .drawer-light .MuiIconButton-root[aria-label="toggle theme"],
+  .drawer-dark .MuiIconButton-root[aria-label="toggle theme"] {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .drawer-light .MuiTypography-root,
+  .drawer-dark .MuiTypography-root {
+    font-size: 12px;
   }
 }
 
@@ -84,11 +110,6 @@
     font-size: 15px;
     margin: 0 10px;
   }
-
-  .theme-toggle-btn {
-    font-size: 13px;
-    padding: 4px 8px;
-  }
 }
 
 /* Laptops and up */
@@ -96,10 +117,5 @@
   .nav-link {
     font-size: 16px;
     margin: 0 15px;
-  }
-
-  .theme-toggle-btn {
-    font-size: 14px;
-    padding: 6px 12px;
   }
 }

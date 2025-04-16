@@ -1,0 +1,105 @@
+/* =======================
+   Base Header Styles
+======================= */
+
+
+/* Dark mode header */
+.navbar-dark {
+  background-color: rgb(0, 0, 0) !important;
+}
+.drawer-light {
+  text-transform: uppercase;
+  background-color:  #e0e0e0;
+  color: #000000;
+}
+
+.drawer-dark {
+  text-transform: uppercase;
+  background-color: #000000 !important;
+  color: #0eabab !important;
+
+}
+
+.drawer-light .MuiListItemButton-root:hover,
+.drawer-dark .MuiListItemButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.51);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-dark .nav-link {
+  color: rgb(15, 179, 185) !important;
+}
+
+/* Light mode header */
+.navbar-light {
+  background-color: #e0e0e0 !important;
+  color: #000 !important;
+}
+
+.navbar-light .nav-link {
+  color: #000 !important;
+}
+
+/* Toggle button styling */
+.theme-toggle-btn {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin-left: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #444;
+}
+
+
+/* =======================
+   Media Queries for Devices
+======================= */
+
+/* Phones (max-width: 600px) */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 10px 15px !important;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .theme-toggle-btn {
+    display: none !important; /* Hide in top nav, shown in drawer */
+  }
+
+  .nav-link {
+    font-size: 14px;
+    padding: 6px 0;
+    display: block;
+  }
+}
+
+/* Tablets (601px - 960px) */
+@media (min-width: 601px) and (max-width: 960px) {
+  .nav-link {
+    font-size: 15px;
+    margin: 0 10px;
+  }
+
+  .theme-toggle-btn {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+}
+
+/* Laptops and up */
+@media (min-width: 961px) {
+  .nav-link {
+    font-size: 16px;
+    margin: 0 15px;
+  }
+
+  .theme-toggle-btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+}

@@ -46,7 +46,7 @@ function Header({ theme, toggleTheme }) {
         <IconButton component="a" href="https://github.com/mukesh0902" target="_blank">
           <GitHub />
         </IconButton>
-        <IconButton component="a" href="https://linkedin.com/in/mukesh-kumar" target="_blank">
+        <IconButton component="a" href ="https://www.linkedin.com/in/mukesh-kumar-b44595239" target="_blank">
           <LinkedIn />
         </IconButton>
         <IconButton component="a" href="https://leetcode.com/mukesh0902" target="_blank">

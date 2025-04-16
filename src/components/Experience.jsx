@@ -12,7 +12,7 @@ function Experience() {
     >
       <h2>Experience</h2>
       <div className="experience-item">
-        <h3>Web Development Intern, Unified Mentor</h3>
+        <h5>Web Development Intern, Unified Mentor</h5>
         <p>July 2024 - September 2024</p>
         <ul>
           <li>Engineered responsive web applications using React, increasing platform retention by 40% through optimized interactive designs.</li>

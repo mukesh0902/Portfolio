@@ -49,7 +49,7 @@ function Projects() {
             whileHover={{ scale: 1.05 }}
             className="project-card"
           >
-            <h3>{project.title}</h3>
+            <h5>{project.title}</h5>
             <p>{project.description}</p>
             <p><strong>Technologies:</strong> {project.technologies.join(', ')}</p>
             <a href={project.liveDemo} target="_blank" className="btn btn-primary">Live Demo</a>

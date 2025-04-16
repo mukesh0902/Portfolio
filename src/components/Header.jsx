@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Header({ theme, setTheme }) {
   return (
     <Navbar bg={theme === 'light' ? 'light' : 'dark'} expand="lg" fixed="top" variant={theme}>
-      <Navbar.Brand>Mukesh Kumar</Navbar.Brand>
+      <Navbar.Brand className='logo'>Mukesh Kumar</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">

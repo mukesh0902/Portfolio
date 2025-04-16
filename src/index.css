@@ -2,8 +2,8 @@
 :root.light {
   --background-color: #ffffff;
   --text-color: #000000;
-  --primary-color: #007bff;
-  --secondary-color: #6c757d; /* Medium gray for light mode */
+  --primary-color: #14b8a6;
+  --secondary-color: #93989c; /* Medium gray for light mode */
   --section-bg: #f8f9fa;
   --footer-text-color: #ffffff; /* White text for footer in light mode */
 }
@@ -11,8 +11,8 @@
 :root.dark {
   --background-color: #121212;
   --text-color: #ffffff;
-  --primary-color: #66b0ff;
-  --secondary-color: #adb5bd; /* Light gray for dark mode */
+  --primary-color: #14b8a6;
+  --secondary-color: #161616; /* Light gray for dark mode */
   --section-bg: #161616;
   --footer-text-color: #000000; /* Black text for footer in dark mode */
 }
@@ -33,18 +33,28 @@ body {
 }
 
 /* Headings */
-h1, h2, h3 {
+h1, h2, h5 {
   font-family: 'Montserrat', sans-serif;
+  color:#14b8a6;
 }
-.dark h1, .dark h2, .dark h3 {
+.dark h1, .dark h2, .dark h5{
   font-family: 'Montserrat', sans-serif;
-  color:rgb(194, 194, 194)
+  color:#14b8a6;
 }
 .dark p, .dark ul, .dark li{
   color: #adb5bd;
   
 }
-
+.dark .logo{
+  color: #14b8a6;
+  font-weight: 800;
+  font-size: 30px;
+}
+.light .logo{
+  color: #14b8a6;
+  font-weight: 800;
+  font-size: 30px;
+}
 /* Section styling */
 section {
   background-color: var(--section-bg);
@@ -94,7 +104,17 @@ section {
 }
 
 /* Primary button */
-.btn-primary {
+.light .btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+.dark .btn-primary:hover, .light .btn-primary:hover{
+  background-color: #0b9182;
+}
+.dark .btn-primary {
   background-color: var(--primary-color);
   color: #fff;
   padding: 10px 20px;

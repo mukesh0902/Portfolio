@@ -8,7 +8,7 @@ const projects = [
     description:
       'Designed and implemented a Full-Stack Employee Management System using the MERN stack, enabling secure role-based authentication with JWT and managing over 10 employee tasks per user with dynamic statuses.',
     technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
-    liveDemo: 'https://github.com/mukesh0902/FullstackEMS.git',
+    liveDemo: 'https://employee-management-client-zu9z.onrender.com',
     github: 'https://github.com/mukesh0902/FullstackEMS.git',
   },
   {
